@@ -1,0 +1,122 @@
+.todo-parent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 10px 0px;
+}
+.add-todo-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #ebe8e8;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 20vh;
+}
+.todo-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
+}
+.todo-button {
+  background: green;
+  color: white;
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.todo-button:hover {
+  color: rgb(255, 255, 255);
+  background: red;
+  transition: 0.1s ease-in-out;
+}
+.todo-list {
+  width: 100%;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #dc9999;
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.single-task {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  text-align: left;
+  margin: 10px 0px;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 350px;
+}
+.buttons-todo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.title-todo > span,
+.description-todo > span {
+  font-weight: 700;
+}
+.title-todo {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.description-todo {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttons-todo > button:nth-child(1),
+.delete-button {
+  background-color: rgb(216, 75, 75);
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.buttons-todo > button:nth-child(1):hover,
+.delete-button:hover {
+  background-color: rgb(255, 0, 0);
+  color: rgb(245, 215, 215);
+}
+.buttons-todo > button:last-child {
+  background-color: rgb(59, 165, 59);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttons-todo > button:last-child:hover {
+  background-color: rgb(0, 87, 0);
+  color: white;
+}

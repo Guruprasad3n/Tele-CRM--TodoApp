@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import "./todoStyle.css";
 
 function Todo() {
-  const [title, setTitle] = useState("completedTodo");
-  const [description, setDescription] = useState("completedTodo");
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
   const [todo, setTodo] = useState([]);
   const [completedTodo, setCompletedTodo] = useState([]);
 
